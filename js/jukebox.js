@@ -23,10 +23,12 @@ function menuOptions(e) {
 }
 
 function play() {
-  $('#play').on('click', function(e) {
-    $('#songPlaying').html("now playing " + songToPlay + " by " + theArtist);
-    return "now playing " + songToPlay + " by " + theArtist;
-  });
+  $('#play').on('click', songPlaying);
+}
+
+function(e) {
+  $('#songPlaying').html("now playing " + songToPlay + " by " + theArtist);
+  return "now playing " + songToPlay + " by " + theArtist;
 }
 
 function pause() {
