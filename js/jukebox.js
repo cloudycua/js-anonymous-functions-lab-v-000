@@ -26,7 +26,7 @@ function play() {
   $('#play').on('click', songPlaying);
 }
 
-function(e) {
+function songPlaying(e) {
   $('#songPlaying').html("now playing " + songToPlay + " by " + theArtist);
   return "now playing " + songToPlay + " by " + theArtist;
 }
