@@ -32,9 +32,11 @@ function songPlaying(e) {
 }
 
 function pause() {
-  $('#pause').on('click', function(e) {
-    $('#songPaused').html(songToPlay + " is paused");
-  });
+  $('#pause').on('click', songPaused);
+}
+
+function songPaused function(e) {
+  $('#songPaused').html(songToPlay + " is paused");
 }
 
 function show() {
