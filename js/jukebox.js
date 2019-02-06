@@ -18,7 +18,7 @@ function menu() {
   $('#menu').on('click', menuOptions);
 }
 
-function menuOptions() {
+function menuOptions(e) {
   $('#menuOptions').html("You can play a song, pause a song, or view all the songs");
 }
 
