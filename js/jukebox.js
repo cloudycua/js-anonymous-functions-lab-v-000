@@ -40,10 +40,10 @@ function songPaused(e) {
 }
 
 function show() {
-  $('#show').on('click', jukeboxSongs);
+  $('#show').on('click', showSongs);
 }
 
-function jukeboxSongs(e) {
+function showSongs(e) {
   var songs = "";
   for (var key in jukeboxSongs) {
     songs += jukeboxSongs[key] + " by " + key +  " is available to play. "
