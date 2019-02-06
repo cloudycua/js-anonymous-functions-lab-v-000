@@ -40,11 +40,13 @@ function songPaused(e) {
 }
 
 function show() {
-  $('#show').on('click', function(e) {
-    var songs = "";
-    for (var key in jukeboxSongs) {
-      songs += jukeboxSongs[key] + " by " + key +  " is available to play. "
-    }
-    $('#showSongs').html(songs);
-  });
+  $('#show').on('click', jukeboxSongs);
+}
+
+function jukeboxSongs(e) {
+  var songs = "";
+  for (var key in jukeboxSongs) {
+    songs += jukeboxSongs[key] + " by " + key +  " is available to play. "
+  }
+  $('#showSongs').html(songs);
 }
