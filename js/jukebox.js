@@ -35,7 +35,7 @@ function pause() {
   $('#pause').on('click', songPaused);
 }
 
-function songPaused function(e) {
+function songPaused(e) {
   $('#songPaused').html(songToPlay + " is paused");
 }
 
